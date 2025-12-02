@@ -10,7 +10,6 @@ function countZeros(array $instructions, int $start = 50, int $max = 99): int {
 
     foreach ($instructions as $line) {
         $line = trim($line);
-        if ($line === '') continue;
 
         $dir = $line[0];
         $steps = (int)substr($line, 1);

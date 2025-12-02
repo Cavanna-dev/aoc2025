@@ -10,7 +10,6 @@ function countZerosDuringRotations(array $instructions, int $start = 50, int $ma
 
     foreach ($instructions as $line) {
         $line = trim($line);
-        if ($line === '') continue;
 
         $dir = $line[0];
         $steps = (int)substr($line, 1);
@@ -26,8 +25,6 @@ function countZerosDuringRotations(array $instructions, int $start = 50, int $ma
                 if ($pos < 0) $pos += ($max + 1);
                 if ($pos === 0) $zeros++;
             }
-        } else {
-            throw new RuntimeException("Direction inconnue: '{$dir}'");
         }
     }
 
