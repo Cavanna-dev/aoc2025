@@ -19,8 +19,6 @@ function countZeros(array $instructions, int $start = 50, int $max = 99): int {
         } elseif ($dir === 'L') {
             $pos = ($pos - $steps) % ($max + 1);
             if ($pos < 0) $pos += ($max + 1);
-        } else {
-            throw new RuntimeException("Direction inconnue: '{$dir}'");
         }
 
         if ($pos === 0) {
