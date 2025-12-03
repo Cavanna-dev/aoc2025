@@ -2,9 +2,7 @@
 
 function fetchAdventInput(int $day): array
 {
-    $url = "https://adventofcode.com/2025/day/{$day}/input";
-
-    $ch = curl_init($url);
+    $ch = curl_init("https://adventofcode.com/2025/day/{$day}/input");
     curl_setopt_array($ch, [
         CURLOPT_RETURNTRANSFER => true,
         CURLOPT_HTTPHEADER => [

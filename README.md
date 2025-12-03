@@ -1,3 +1,3 @@
 # aoc2025
 
-L'élégance à un prix
+L'élégance a un prix
