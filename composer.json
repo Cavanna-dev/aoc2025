@@ -1,0 +1,25 @@
+{
+    "name": "ccavanna/aoc2025",
+    "description": "AdventofCode2025",
+    "type": "project",
+    "require": {
+        "phpunit/phpunit": "^12.5",
+        "ext-curl": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ccavanna\\Aoc2025\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Christophe Cavanna",
+            "email": "cavannachristophe@gmail.com"
+        }
+    ]
+}
