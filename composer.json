@@ -4,7 +4,8 @@
     "type": "project",
     "require": {
         "phpunit/phpunit": "^12.5",
-        "ext-curl": "*"
+        "ext-curl": "*",
+        "ext-bcmath": "*"
     },
     "autoload": {
         "psr-4": {
